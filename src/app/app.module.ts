@@ -7,7 +7,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AppComponent } from './app.component';
-import { secret } from '../../secret';
+import { environment } from '../environments/environment';
 import { DashLayoutComponent } from './admin/layout/dash-layout/dash-layout.component';
 import { AnalyticsComponent } from './admin/pages/analytics/analytics.component';
 import { DashNavComponent } from './admin/components/dash-nav/dash-nav.component';
@@ -37,7 +37,7 @@ import { HomeComponent } from './landing/pages/home/home.component';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(secret.firebaseConfig), // config
+    AngularFireModule.initializeApp(environment.firebaseConfig), // config
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
     AngularFireStorageModule, // storage
