@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/BC-tree-app",
     "ignore": [
       "firebase.json",
       "**/.*",
