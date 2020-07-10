@@ -14,10 +14,13 @@ import { DashNavComponent } from './admin/components/dash-nav/dash-nav.component
 import { DashSideNavComponent } from './admin/components/dash-side-nav/dash-side-nav.component';
 import { DashFooterComponent } from './admin/components/dash-footer/dash-footer.component';
 import { WelcomeComponent } from './landing/pages/welcome/welcome.component';
+import { WelcomeComponent as WelcomeLayout } from './landing/layout/welcome/welcome.component';
 import { DefaultComponent } from './landing/layout/default/default.component';
 import { NavbarComponent } from './landing/components/navbar/navbar.component';
 import { FooterComponent } from './landing/components/footer/footer.component';
 import { HomeComponent } from './landing/pages/home/home.component';
+import { WelcomeNavbarComponent } from './landing/components/welcome-navbar/welcome-navbar.component';
+import { TreeHomeComponent } from './admin/pages/tree/tree-home/tree-home.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +31,13 @@ import { HomeComponent } from './landing/pages/home/home.component';
     DashSideNavComponent,
     DashFooterComponent,
     WelcomeComponent,
+    WelcomeLayout,
     DefaultComponent,
     NavbarComponent,
     FooterComponent,
     HomeComponent,
+    WelcomeNavbarComponent,
+    TreeHomeComponent,
   ],
   imports: [
     BrowserModule,
