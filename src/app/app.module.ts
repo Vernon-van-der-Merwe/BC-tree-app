@@ -21,6 +21,7 @@ import { FooterComponent } from './landing/components/footer/footer.component';
 import { HomeComponent } from './landing/pages/home/home.component';
 import { WelcomeNavbarComponent } from './landing/components/welcome-navbar/welcome-navbar.component';
 import { TreeHomeComponent } from './admin/pages/tree/tree-home/tree-home.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { TreeHomeComponent } from './admin/pages/tree/tree-home/tree-home.compon
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
     AngularFireStorageModule, // storage
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

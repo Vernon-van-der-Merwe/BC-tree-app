@@ -1,1 +1,80 @@
-<p>analytics works!</p>
+<div class="container pt-5">
+  <h2>Analytics</h2>
+  <div class="row pt-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5>Page visits</h5>
+          <h5>376</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5>Active Tree's</h5>
+          <h5>120 / 135</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5>Needs Attention!</h5>
+          <h5>15</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5>Funds Raised</h5>
+          <h5>R 50092</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5>Page visits</h5>
+          <div class="chart-wrapper">
+            <canvas
+              baseChart
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [options]="lineChartOptions"
+              [colors]="lineChartColors"
+              [legend]="lineChartLegend"
+              [chartType]="lineChartType"
+              [plugins]="lineChartPlugins"
+            >
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5>Funds Raised</h5>
+          <div class="chart-wrapper">
+            <canvas
+              baseChart
+              [datasets]="lineChartData2"
+              [labels]="lineChartLabels2"
+              [options]="lineChartOptions2"
+              [colors]="lineChartColors2"
+              [legend]="lineChartLegend2"
+              [chartType]="lineChartType2"
+              [plugins]="lineChartPlugins2"
+            >
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
