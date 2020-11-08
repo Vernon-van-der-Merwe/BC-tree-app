@@ -22,6 +22,7 @@ import { HomeComponent } from './landing/pages/home/home.component';
 import { WelcomeNavbarComponent } from './landing/components/welcome-navbar/welcome-navbar.component';
 import { TreeHomeComponent } from './admin/pages/tree/tree-home/tree-home.component';
 import { ChartsModule } from 'ng2-charts';
+import { PageComponent } from './iot-simulation/page/page.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ChartsModule } from 'ng2-charts';
     HomeComponent,
     WelcomeNavbarComponent,
     TreeHomeComponent,
+    PageComponent,
   ],
   imports: [
     BrowserModule,

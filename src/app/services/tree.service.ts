@@ -18,6 +18,7 @@ export class TreeService {
   private TreesDoc: AngularFirestoreDocument<Tree>;
   private Trees: Observable<Tree[]>;
   private Tree: Observable<Tree>;
+
   constructor(
     private afs: AngularFirestore,
     private storage: AngularFireStorage

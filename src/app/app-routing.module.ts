@@ -7,8 +7,13 @@ import { HomeComponent } from './landing/pages/home/home.component';
 import { DashLayoutComponent } from './admin/layout/dash-layout/dash-layout.component';
 import { AnalyticsComponent } from './admin/pages/analytics/analytics.component';
 import { TreeHomeComponent } from './admin/pages/tree/tree-home/tree-home.component';
+import { PageComponent } from './iot-simulation/page/page.component';
 
 const routes: Routes = [
+  {
+    path: 'iotsim',
+    component: PageComponent,
+  },
   {
     path: '',
     component: WelcomeLayout,
