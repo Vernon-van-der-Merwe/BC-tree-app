@@ -1,3 +1,4 @@
+import { Tree } from 'src/app/models/tree.model';
 import { Injectable } from '@angular/core';
 import {
   AngularFirestore,
@@ -6,7 +7,6 @@ import {
   AngularFirestoreDocument,
 } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-import { Tree } from '../models/Tree.model';
 import { map } from 'rxjs/operators';
 import { AngularFireStorage } from '@angular/fire/storage';
 

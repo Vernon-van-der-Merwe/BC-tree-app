@@ -1,6 +1,6 @@
+import { Tree } from 'src/app/models/tree.model';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Tree } from 'src/app/models/Tree.model';
 import { TreeService } from 'src/app/services/tree.service';
 
 @Component({
