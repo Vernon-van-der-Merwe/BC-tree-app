@@ -23,6 +23,14 @@ import { WelcomeNavbarComponent } from './landing/components/welcome-navbar/welc
 import { TreeHomeComponent } from './admin/pages/tree/tree-home/tree-home.component';
 import { ChartsModule } from 'ng2-charts';
 import { PageComponent } from './iot-simulation/page/page.component';
+import { TreeCreateComponent } from './admin/pages/tree/tree-create/tree-create.component';
+import { FormsModule } from '@angular/forms';
+import { TreeViewComponent } from './admin/pages/tree/tree-view/tree-view.component';
+import { TreeEditComponent } from './admin/pages/tree/tree-edit/tree-edit.component';
+import { DefaultLayoutComponent } from './iot-simulation/layout/default-layout/default-layout.component';
+import { CommonModule } from '@angular/common';
+import { TreeSelectionComponent } from './iot-simulation/page/tree-selection/tree-selection.component';
+import { TreeUpdateComponent } from './iot-simulation/page/tree-update/tree-update.component';
 
 @NgModule({
   declarations: [
@@ -41,9 +49,16 @@ import { PageComponent } from './iot-simulation/page/page.component';
     WelcomeNavbarComponent,
     TreeHomeComponent,
     PageComponent,
+    TreeCreateComponent,
+    TreeViewComponent,
+    TreeEditComponent,
+    DefaultLayoutComponent,
+    TreeSelectionComponent,
+    TreeUpdateComponent,
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     RouterModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), // config
@@ -51,6 +66,7 @@ import { PageComponent } from './iot-simulation/page/page.component';
     AngularFireAuthModule, // auth
     AngularFireStorageModule, // storage
     ChartsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

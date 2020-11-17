@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <form name="treeCreate">
+            <div class="row justify-content-center">
+              <h3>{{ title }}</h3>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail4">Temperature</label>
+              <input
+                name="temperature"
+                [(ngModel)]="temperature"
+                type="text"
+                class="form-control"
+                id="temperature"
+                placeholder="Loading..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputEmail4">Humidity</label>
+              <input
+                name="humidity"
+                [(ngModel)]="humidity"
+                type="text"
+                class="form-control"
+                id="humidity"
+                placeholder="Loading..."
+              />
+            </div>
+            <button (click)="onSubmit()" class="btn btn-primary btn-block">
+              Update
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

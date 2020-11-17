@@ -1,0 +1,121 @@
+<div class="container">
+  <div class="row pb-5 pt-5">
+    <div class="col">
+      <h1>Add Tree</h1>
+    </div>
+  </div>
+  <form name="treeCreate">
+    <div class="card">
+      <div class="card-body">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Title</label>
+            <input
+              name="title"
+              [(ngModel)]="title"
+              type="text"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Loading..."
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Status</label>
+            <input
+              name="status"
+              [(ngModel)]="status"
+              type="text"
+              class="form-control"
+              id="inputPassword4"
+              placeholder="Loading..."
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Location</label>
+          <input
+            name="location"
+            [(ngModel)]="location"
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="Loading..."
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="inputAddress">Tree Age</label>
+              <input
+                name="age"
+                [(ngModel)]="age"
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Loading..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Tree Species</label>
+              <input
+                name="species"
+                [(ngModel)]="species"
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Loading..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Tree fruit</label>
+              <input
+                name="fruit"
+                [(ngModel)]="fruit"
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Loading..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="inputAddress">Humidity</label>
+              <input
+                name="humidity"
+                [(ngModel)]="humidity"
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Loading..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Temperature (Celsius)</label>
+              <input
+                name="age"
+                [(ngModel)]="temperature"
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Loading..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button (click)="onSubmit()" class="btn btn-primary btn-block">
+      Add Tree
+    </button>
+  </form>
+</div>

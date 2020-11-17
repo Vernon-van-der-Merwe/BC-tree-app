@@ -47,7 +47,11 @@ export class TreeService {
         .doc(`Trees/${id}`)
         .snapshotChanges()
         .subscribe((response) => {
-          resolve(response.payload.data() as Tree);
+          const data = response.payload.data() as Tree;
+          const id = response.payload.id;
+          const tree: Tree = data;
+          tree.id = id;
+          resolve(tree as Tree);
         });
     });
   }
@@ -60,6 +64,7 @@ export class TreeService {
     this.TreesDoc = this.afs.doc(`Trees/${id}`);
     return this.TreesDoc.delete();
   }
+
   updateTree(Tree): Promise<any> {
     this.TreesDoc = this.afs.doc(`Trees/${Tree.id}`);
     return this.TreesDoc.update(Tree);

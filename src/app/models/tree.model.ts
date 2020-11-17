@@ -1,4 +1,5 @@
 export interface Tree {
+  id?: string;
   title: string;
   status: string;
   location: string;
@@ -6,13 +7,13 @@ export interface Tree {
   type: TreeType;
 }
 
-interface TreeType {
+export interface TreeType {
   age: number;
   species: string;
   fruit: string;
 }
 
-interface TreeMeasurements {
+export interface TreeMeasurements {
   humidity: number;
-  heat: number;
+  temperature: number;
 }
